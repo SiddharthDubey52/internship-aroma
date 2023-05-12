@@ -62,7 +62,7 @@ input{
     letter-spacing: 2px;
 }
 
-#email, #password, #companyname, #number{
+#email, #password, #companyname, #number, #universityname{
     width: 25.5rem;
 }
 
@@ -148,7 +148,7 @@ button{
         padding-right: 1rem;
     }
     
-    #email, #password, #companyname, #number, #lastname, #firstname{
+    #email, #password, #companyname, #universityname #number, #lastname, #firstname{
         width: 35rem;
     }
 
@@ -212,5 +212,6 @@ button{
         top: -25vh;
         left: -5vw;
     }
+    
 
   } 	
