@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/report.css" />
+    <title>Report</title>
+  </head>
+
+  <body>
+    <div class="report-container">
+      <form action="../html/report.html" method="get">
+        <p>Why are you reporting this?</p>
+        <div class="options">
+          <input
+            type="radio"
+            id="o1"
+            name="color"
+            value="I think it's offensive or harassing"
+          />
+          <label for="o1"> I think it's offensive or harassing.</label>
+        </div>
+
+        <div class="options">
+          <input
+            type="radio"
+            id="o2"
+            name="color"
+            value="Asking for money or seems like a fake job/internship"
+          />
+          <label for="o2"
+            >Asking for money or seems like a fake job/internship.</label
+          >
+        </div>
+
+        <div class="options">
+          <input
+            type="radio"
+            id="o3"
+            name="color"
+            value="Incorrect company, location or job details"
+          />
+          <label for="o3">Incorrect company, location or job details</label>
+        </div>
+
+        <div class="options">
+          <input type="radio" id="o4" name="color" value="other" />
+          <label for="o3"> other</label>
+        </div>
+        <label for="reason">Please describe your problem?</label>
+        <textarea
+          id="reason"
+          name="reason"
+          rows="5"
+          cols="33"
+          placeholder="Please type your query here"
+        ></textarea>
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
