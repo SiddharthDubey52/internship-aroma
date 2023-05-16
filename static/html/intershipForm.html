@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/internshipForm.css" />
+    <title>Internship Form</title>
+  </head>
+  <body>
+    <div class="ellipse"></div>
+    <div class="main-container">
+      <div class="navbar"></div>
+      <div class="section">
+        <div class="sub-section-options"></div>
+        <div class="sub-section-form">
+          <div class="form-container">
+            <div class="img-head"><img src="../backgrounds/img-internshipForm.jpg"></div>
+            <div class="logo"></div>
+            <div class="form">
+              <form>
+                <label for="cv">Upload the CV</label>
+                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" />
+                <label for="wrk-exp"
+                  >Detail about work experience if any otherwise, write ‘NA’.</label
+                >
+                <textarea
+                  id="wrk-exp"
+                  name="wrk-exp"
+                  rows="7"
+                  cols="60"
+                  placeholder="Text here"
+                ></textarea>
+                <label for="interview"
+                  >Write down 2-3 dates for scheduling the interview for further
+                  shortlisting</label
+                >
+                <textarea
+                  id="interview"
+                  name="interview"
+                  rows="7"
+                  cols="60"
+                  placeholder="Detail about work experience if any otherwise, write ‘NA’ . "
+                ></textarea>
+                <input type="submit" value="Upload" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
