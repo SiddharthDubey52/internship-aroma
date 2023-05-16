@@ -121,7 +121,7 @@ button{
     width: 3rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     .heading{
         font-size: 5.5rem;
