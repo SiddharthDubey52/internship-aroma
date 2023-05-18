@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration | Employee</title>
+    <title>Registration | Employer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/employee_register.css">
+    <link rel="stylesheet" href="../css/employer_register.css">
 
 </head>
 <body>
@@ -19,7 +19,7 @@
                     Register with Internship Aroma and <br> Stop Seeking Today!
                 </h2>
 
-                <form action="/static/html/employee_register.html" method="post">
+                <form action="../../index.html" method="get">
                     <div class="names">
                         <div class="f_names form_elements">
                             <label for="First-Name">First Name</label> <br>
@@ -45,8 +45,18 @@
                         <label for="number">Phone Number</label> <br>
                         <input type="number" name="number" id="number">
                     </div>
+                    
+                    <div class="companyname form_elements" id="company_name" style="display: none;">
+                        <label for="Companyname">Company Name</label> <br>
+                        <input type="text" name="company-Name" id="companyname">
+                    </div>
 
-                    <button type="submit">Register</button>
+                    <div class="universityname form_elements" id="university_name" style="display: none;">
+                        <label for="universityname">University Name</label> <br>
+                        <input type="text" name="university-Name" id="universityname">
+                    </div>
+
+                    <button type="submit" class="reg_btn">Register</button>
                    
                 </form>
                 
@@ -58,10 +68,11 @@
             </div>
             <div class="alt-login">
                 <ul>
-                    <li><a href="#"><img src="../icons/google.png" alt="" class="img"></a></li>
-                    <li><a href="#"><img src="../icons/facebook.png" alt="" class="img"></a></li>
-                    <li><a href="#"><img src="../icons/apple.png" alt="" class="img"></a></li>
+                    <li><a href="#"><img src="../icons/register-page/google.png" alt="" class="img"></a></li>
+                    <li><a href="#"><img src="../icons/register-page/facebook.png" alt="" class="img"></a></li>
+                    <li><a href="#"><img src="../icons/register-page/apple.png" alt="" class="img"></a></li>
                 </ul>
+                <a href="employer_register.html" style="color: black; text-decoration: none; font-size: 1.3rem; display: flex;justify-content: center; margin-top: 2rem;">Not an Employee? Click Here to Register as an Employer</a>
             </div>
         </div>
         <div class="des2">
@@ -71,5 +82,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

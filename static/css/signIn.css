@@ -5,7 +5,7 @@
 .sub-container-1{
   width: 60%;
   min-width: 340px;
-  margin: 52px auto;
+  margin: 40px auto;
 
 }
 .form-container{
@@ -13,7 +13,7 @@
   width: 80%;
   min-width: 340px;
   margin: auto;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   /* margin-bottom: 20px; */
   /* height: 300px; */
   background: rgba(189, 199, 201, 0.06);
@@ -34,7 +34,7 @@ font-size: 36px;
 line-height: 44px;
 height: 44px;
 color: #18283F;
-margin-top: 18px;
+margin-top: 12px;
 }
 .horizontal-line{
   position: relative;
@@ -42,12 +42,12 @@ margin-top: 18px;
  height: 3px;
   width: 60px;
   background: #554CB9;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 form{
   width: 60%;
   margin: 0px auto;
-  margin-top:10px ;
+  margin-top:8px ;
   padding: 10px;
 }
 
@@ -92,7 +92,6 @@ padding: 4px 20px;
 .forget-pass a{
   float: right;
   position: relative;
-  left: -40px;
   margin-top: 38px ;
   font-family: 'Proxima Nova';
   font-style: normal;
@@ -111,7 +110,7 @@ padding: 4px 20px;
   align-items: center;
   width: 80%;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 #sign-in{
   width: 100px;
@@ -124,7 +123,16 @@ font-weight: 700;
 font-size: 18px;
 line-height: 27px;
 color: #18283F;
-margin: 12px 0px;
+margin: 8px 0px;
+}
+label{
+  /* font-family: 'Proxima Nova'; */
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 36px;
+color: #000000;
+margin: 0px 8px;
 }
 #sign-in:hover{
   cursor: pointer;
