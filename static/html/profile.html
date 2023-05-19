@@ -12,8 +12,7 @@
 <script type="text/javascript">
   function showInput(id) {
     document.getElementById("inputLink" + id).style.display = "none";
-    document.getElementById("inputField" + id).style.display =
-      "inline-block";
+    document.getElementById("inputField" + id).style.display ="block";
   }
 </script>
 
@@ -29,7 +28,7 @@
     </div>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link px-2 active text-white">Home</a></li>
+      <li class="nav-item"><a href="../../index.html" class="nav-link px-2 active text-white">Home</a></li>
       <li><a href="#" class="nav-link px-2 text-white">Internships</a></li>
       <li><a href="#" class="nav-link px-2 text-white">Jobs</a></li>
       <li><a href="#" class="nav-link px-2 text-white">Courses</a></li>
@@ -60,173 +59,220 @@
 
   <!--resume-->
   <table class="table" cellpadding="32" cellspacing="40" id="table">
-      <div class="row1">
-        <tr>
-            <div class="col">
-            <td>
-              <img class="pankaj" width="140px" src="../icons/profile-icons/Rectangle 456.png" alt="pfp-img" />
-            </td>
-            <td>
-              <div class="text">
-                <h3 id="h3"><strong> Pankaj Asiwal</strong></h3>
-                <p id="p">pankajasiwal@gmail.com</p>
-                <p id="p">Delhi,New Delhi, India</p>
-                <p id="p1">+987002556</p>
-              </div>
-            </td>
-        </tr>
-        <!--education-->
-        <tr>
-          <td>
-            <div>
-              <img src="../icons/profile-icons/education-hT.png" alt="" />
-              <h5>Education Background</h5>
-          </td>
-          <td>
-            <img src="../icons/profile-icons/pen-img.png" alt="" />
-            <a href="#footer" id="inputLink1" onclick="showInput(1)">Add Education</a>
-            <div class="inputField" id="inputField1">
-              <input type="text" placeholder="Type here" />
-            </div>
-      </div>
+    <div class="container" style="margin-top: 5rem;">
+      <tr>
+        <div class="col">
+        <td>
+          <img class="pankaj" width="140px" src="../icons/profile-icons/Rectangle 456.png" alt="pfp-img" />
+        </td>
+        <td>
+          <div class="text">
+            <h3 id="h3"><strong> Pankaj Asiwal</strong></h3>
+            <p id="p">pankajasiwal@gmail.com</p>
+            <p id="p">Delhi,New Delhi, India</p>
+            <p id="p1">+987002556</p>
+          </div>
+        </td>
+    </tr>
+    <!--education-->
+
+    <tr>
+      <td>
+        <div>
+          <img src="../icons/profile-icons/education-hT.png" alt="" />
+          <h5>Education Background</h5>
+        </div>
       </td>
-      </tr>
-      <!--tRAINING-->
-      <tr>
-        <td>
-          <div>
-            <img src="../icons/profile-icons/TRANING-IMG.png" alt="" />
-            <h5>Trainings</h5>
-        </td>
-        <td>
-          <img src="../icons/profile-icons/pen-img.png" alt="" />
-          <a href="#footer" id="inputLink2" onclick="showInput(2)">Add Trainings</a>
-          <div class="inputField" id="inputField2">
-            <input type="text" placeholder="Type here" />
-          </div>
-        </td>
-      </tr>
-      <!--courses-->
-      <tr>
-        <td>
-          <div>
-            <img src="../icons/profile-icons/COURSES-img.png" alt="" />
-            <h5>Courses</h5>
-        </td>
-        <td>
-          <img src="../icons/profile-icons/pen-img.png" alt="" />
-          <a href="#footer" id="inputLink3" onclick="showInput(3)">Add Courses</a>
-          <div class="inputField" id="inputField3">
-            <input type="text" placeholder="Type here" />
-          </div>
-          </div>
-        </td>
-      </tr>
-      <!--Internships-->
-      <tr>
-        <td>
-          <div>
-            <img src="../icons/profile-icons/Internships.png" alt="" />
-            <h5>Internships</h5>
-        </td>
-        <td>
-          <img src="../icons/profile-icons/pen-img.png" alt="" />
-          <a href="#footer" id="inputLink4" onclick="showInput(4)">Add Internships</a>
-          <div class="inputField" id="inputField4">
-            <input type="text" placeholder="Type here" />
-          </div>
-          </div>
-        </td>
-      </tr>
-      <!--Jobs-->
-      <tr>
-        <td>
-          <div>
-            <img src="../icons/profile-icons/job-img.png" alt="" />
-            <h5>Jobs</h5>
-        </td>
-        <td>
-          <img src="../icons/profile-icons/pen-img.png" alt="" />
-          <a href="#footer" id="inputLink5" onclick="showInput(5)">Add Jobs</a>
-          <div class="inputField" id="inputField5">
-            <input type="text" placeholder="Type here" />
-          </div>
-          </div>
-        </td>
-      </tr>
-      <!--projects-->
-      <tr>
-        <td>
-          <div>
-            <img src="../icons/profile-icons/projects-img.png" alt="" />
-            <h5>Projects</h5>
-        </td>
-        <td>
-          <img src="../icons/profile-icons/pen-img.png" alt="" />
-          <a href="#footer" id="inputLink6" onclick="showInput(6)">Add Projects</a>
-          <div class="inputField" id="inputField6">
-            <input type="text" placeholder="Type here" />
-          </div>
-          </div>
-        </td>
-      </tr>
-      <!---ACH-->
-      <tr>
-        <td>
-          <div>
+      <td>
+        <img src="../icons/profile-icons/pen-img.png" alt="" />
+        <a href="#footer" id="inputLink1" onclick="showInput(1)">Add Education</a>
+        <div class="inputField" id="inputField1" style="display: none;">
+          <div class="details" style="display: flex; flex-direction: column;">
+            <label for="degree">Degree</label>
+            <input type="text" name="degree" id="degree" placeholder="Enter your degree name">
+            
+            <label for="college">College</label>
+            <input type="text" name="college" id="college" placeholder="Enter your college name">
+            
+            <label for="startdate">Start Date</label>
+            <input type="date" name="startdate" id="startdate" placeholder="Enter starting date of your degree">
+            
+            <label for="lastdate">Last Date</label>
+            <input type="date" name="lastdate" id="lastdate" placeholder="Enter ending date of your degree">
+            
+            <label for="percentage">Percentage</label>
+            <input type="text" name="percentage" id="percentage" placeholder="Enter your Last percentage">
 
-            <img src="../icons/profile-icons/ach-img.png" alt="" />
-            <h5>Achievenments</h5>
+            <button onclick="addeducationdtails(1)">Save</button>
+          </div>
+        </div>
+      </td>
+    </tr>
+      
+    <!--tRAINING-->
 
+    <tr>
+      <td>
+        <div>
+          <img src="../icons/profile-icons/TRANING-IMG.png" alt="" />
+          <h5>Trainings</h5>
+      </td>
+      <td>
+        <img src="../icons/profile-icons/pen-img.png" alt="" />
+        <a href="#footer" id="inputLink2" onclick="showInput(2)">Add Trainings</a>
+        <div class="inputField" id="inputField2" style="display: none;">
+          <div class="details" style="display: flex; flex-direction: column;">
+            <label for="degree">Role</label>
+            <input type="text" name="degree" id="degree" placeholder="Enter your role name">
+            
+            <label for="college">Comapany</label>
+            <input type="text" name="college" id="college" placeholder="Enter your Comapany name">
+            
+            <label for="startdate">Start Date</label>
+            <input type="date" name="startdate" id="startdate" placeholder="Enter starting date of your degree">
+            
+            <label for="lastdate">Last Date</label>
+            <input type="date" name="lastdate" id="lastdate" placeholder="Enter ending date of your degree">
+            
+            <label for="percentage">Stipend</label>
+            <input type="text" name="percentage" id="percentage" placeholder="Enter your Last Stipend">
 
-        </td>
-        <td>
-          <img src="../icons/profile-icons/pen-img.png" alt="" />
-          <a href="#footer" id="inputLink7" onclick="showInput(7)">Add Achievenments/rewards or awards</a>
-          <div class="inputField" id="inputField7">
-            <input type="text" placeholder="Type here" />
+            <button onclick="addeducationdtails(1)">Save</button>
           </div>
-          </div>
-        </td>
-      </tr>
-      <!--ac&h-->
-      <tr>
-        <td>
-          <div>
+        </div>
+      </td>
+    </tr>
 
+    <!--courses-->
+    <tr>
+      <td>
+        <div>
+          <img src="../icons/profile-icons/COURSES-img.png" alt="" />
+          <h5>Courses</h5>
+        </div>
+      </td>
+      <td>
+        <img src="../icons/profile-icons/pen-img.png" alt="" />
+        <a href="#footer" id="inputLink3" onclick="showInput(3)">Add Courses</a>
+        <div class="inputField" id="inputField3" style="display: none;">
+          <div class="details" style="display: flex; flex-direction: column;">
+            <label for="degree">Course</label>
+            <input type="text" name="degree" id="degree" placeholder="Enter your course name">
+            
+            <label for="college">From where did you do this course</label>
+            <input type="text" name="college" id="college" placeholder="Udemy">
+            
+            <label for="startdate">Start Date</label>
+            <input type="date" name="startdate" id="startdate" placeholder="Enter starting date of your degree">
+            
+            <label for="lastdate">Last Date</label>
+            <input type="date" name="lastdate" id="lastdate" placeholder="Enter ending date of your degree">
 
-            <img src="../icons/profile-icons/ac&h-mg.png" alt="" />
-            <h5>Acitivites or Hobbies</h5>
+            <button onclick="addeducationdtails(1)">Save</button>
+          </div>
+        </div>
         </td>
-        <td>
-          <img src="../icons/profile-icons/pen-img.png" alt="" />
-          <a href="#footer" id="inputLink8" onclick="showInput(8)">Add Other Acitivites or Hobbies
-          </a>
-          <div class="inputField" id="inputField8">
-            <input type="text" placeholder="Type here" />
-          </div>
-          </div>
-        </td>
-      </tr>
-      <!--MLC-->
-      <tr>
-        <td>
-          <div>
-            <img src="../icons/profile-icons/MLC-img.png" alt="" />
-            <h5>Media links to connects</h5>
-        </td>
-        <td>
-          <img src="../icons/profile-icons/pen-img.png" alt="" />
-          <a href="#footer" id="inputLink9" onclick="showInput(9)">Add Media Links to Connects</a>
-          <div class="inputField" id="inputField9">
-            <input type="text" placeholder="Type here" />
-          </div>
-          </div>
-          </div>
-        </td>
-      </tr>
+    </tr>
+    <!--Internships-->
+    <tr>
+      <td>
+        <div>
+          <img src="../icons/profile-icons/Internships.png" alt="" />
+          <h5>Internships</h5>
+        </div>
+      </td>
+      <td>
+        <img src="../icons/profile-icons/pen-img.png" alt="" />
+        <a href="#footer" id="inputLink4" onclick="showInput(4)">Add Internships</a>
+        <div class="inputField" id="inputField4">
+          <input type="text" placeholder="Type here" />
+        </div>
+      </td>
+    </tr>
+    <!--Jobs-->
+    <tr>
+      <td>
+        <div>
+          <img src="../icons/profile-icons/job-img.png" alt="" />
+          <h5>Jobs</h5>
+        </div>
+      </td>
+      <td>
+        <img src="../icons/profile-icons/pen-img.png" alt="" />
+        <a href="#footer" id="inputLink5" onclick="showInput(5)">Add Jobs</a>
+        <div class="inputField" id="inputField5">
+          <input type="text" placeholder="Type here" />
+        </div>
+      </td>
+    </tr>
+    <!--projects-->
+    <tr>
+      <td>
+        <div>
+          <img src="../icons/profile-icons/projects-img.png" alt="" />
+          <h5>Projects</h5>
+        </div>
+      </td>
+      <td>
+        <img src="../icons/profile-icons/pen-img.png" alt="" />
+        <a href="#footer" id="inputLink6" onclick="showInput(6)">Add Projects</a>
+        <div class="inputField" id="inputField6">
+          <input type="text" placeholder="Type here" />
+        </div>
+      </td>
+    </tr>
+    <!---ACH-->
+    <tr>
+      <td>
+        <div>
+          <img src="../icons/profile-icons/ach-img.png" alt="" />
+          <h5>Achievenments</h5>
+        </div>
+      </td>
+      <td>
+        <img src="../icons/profile-icons/pen-img.png" alt="" />
+        <a href="#footer" id="inputLink7" onclick="showInput(7)">Add Achievenments/rewards or awards</a>
+        <div class="inputField" id="inputField7">
+          <input type="text" placeholder="Type here" />
+        </div>   
+      </td>
+    </tr>
+    <!--ac&h-->
+    <tr>
+      <td>
+        <div>
+          <img src="../icons/profile-icons/ac&h-mg.png" alt="" />
+          <h5>Acitivites or Hobbies</h5>
+        </div>
+      </td>
+      <td>
+        <img src="../icons/profile-icons/pen-img.png" alt="" />
+        <a href="#footer" id="inputLink8" onclick="showInput(8)">Add Other Acitivites or Hobbies
+        </a>
+        <div class="inputField" id="inputField8">
+          <input type="text" placeholder="Type here" />
+        </div>
+      </td>
+    </tr>
+    <!--MLC-->
+    <tr>
+      <td>
+        <div>
+          <img src="../icons/profile-icons/MLC-img.png" alt="" />
+          <h5>Media links to connects</h5>
+        </div>
+      </td>
+      <td>
+        <img src="../icons/profile-icons/pen-img.png" alt="" />
+        <a href="#footer" id="inputLink9" onclick="showInput(9)">Add Media Links to Connects</a>
+        <div class="inputField" id="inputField9">
+          <input type="text" placeholder="Type here" />
+        </div>
+      </td>
+    </tr>
 
-
+    </div>
+    
   </table>
   
   <div class="down">
@@ -318,12 +364,8 @@
   </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -104,3 +104,30 @@ footer {
     padding-bottom: 5rem;
     margin-top: -3rem;
 }
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #393939;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.details{
+    display: none;
+}
+
+ul{
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
