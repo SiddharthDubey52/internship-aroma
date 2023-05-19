@@ -121,7 +121,7 @@ button{
     width: 3rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
 
     .heading{
         font-size: 5.5rem;
@@ -204,7 +204,7 @@ button{
     }
 
     .mid-img {
-        top: 137vh;
+        top: 100vh;
         left: 137vw;
     }
 
